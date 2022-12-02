@@ -4,7 +4,9 @@
   transition: 0.3s;
   padding: 15px;
   background-color: aliceblue;
-  margin-bottom: 10px;
+  margin: 30px;
+  text-align: center;
+  width: 900px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -17,6 +19,14 @@
   padding: 2px 16px;
 }
 
+img {
+  height: 25%;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.blocks {
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

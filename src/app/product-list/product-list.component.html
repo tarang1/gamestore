@@ -1,12 +1,14 @@
-<h2>Games</h2>
+<!-- <h2>Games</h2> -->
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products" class="blocks">
   <div class="card">
     <div>
-      <h3 class="card-title">{{ product.name }}</h3>
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ea.com%2Fgames%2Ffifa%2Ffifa-23%2Fnews%2Ffifa-23-pitch-notes-fifa-world-cup&psig=AOvVaw2tKlbIC905pcygLf9xOTJo&ust=1670059657373000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCd6ZbP2vsCFQAAAAAdAAAAABAG">
+      <h3 class="card-title">
+        <strong>{{ product.name }}</strong>
+      </h3>
+      <img src="{{ product.image }}" />
       <p class="card-text">{{ product.description }}</p>
-      <a class="button fancy-button">Buy</a>
+      <a class="button fancy-button" (click)="share();buy()">Buy</a>
     </div>
   </div>
 </div>
