@@ -1,0 +1,18 @@
+<h2>Games</h2>
+
+<div *ngFor="let product of products">
+  <div class="card">
+    <div>
+      <h3 class="card-title">{{ product.name }}</h3>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ea.com%2Fgames%2Ffifa%2Ffifa-23%2Fnews%2Ffifa-23-pitch-notes-fifa-world-cup&psig=AOvVaw2tKlbIC905pcygLf9xOTJo&ust=1670059657373000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMCd6ZbP2vsCFQAAAAAdAAAAABAG">
+      <p class="card-text">{{ product.description }}</p>
+      <a class="button fancy-button">Buy</a>
+    </div>
+  </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
